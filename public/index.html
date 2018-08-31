@@ -35,7 +35,8 @@
       * {
         margin: 0;
         padding: 0;
-        box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+                box-sizing: border-box;
       }
       html, body {
         overflow: hidden;
@@ -44,6 +45,8 @@
         background-color: #37c97b;
         font-size: 100%;
         line-height: 1.4;
+        -webkit-transition: background-color linear 0.2s;
+        -o-transition: background-color linear 0.2s;
         transition: background-color linear 0.2s
       }
       article {
