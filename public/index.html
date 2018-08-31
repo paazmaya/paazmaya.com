@@ -44,6 +44,7 @@
         background-color: #37c97b;
         font-size: 100%;
         line-height: 1.4;
+        transition: background-color linear 0.2s
       }
       article {
         height: 100vh;
@@ -67,7 +68,7 @@
       var html = document.querySelector('html');
       window.setInterval(function () {
         html.style.backgroundColor = '#' + ('00000' + (Math.random() * (1 << 24) | 0).toString(16)).slice(-6);
-      }, 468);
+      }, 900);
     </script>
   </body>
 </html>
