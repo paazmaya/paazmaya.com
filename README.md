@@ -8,6 +8,8 @@ Background color is somewhat green with blue feeling, as a hex `#37c97b`.
 
 ![Jukka Paasonen](jukka-paasonen.png)
 
+Deployment done on every `git push` to Netlify.
+
 ## License
 
 MIT (Men In Tights)
