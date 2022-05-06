@@ -7,8 +7,8 @@
     "test": "node selenium-lambdatest.js"
   },
   "engines": {
-    "node": ">=12.12.0",
-    "npm": ">=6.12.0"
+    "node": ">=16.13.0",
+    "npm": ">=8.1.0"
   },
   "repository": {
     "type": "git",
