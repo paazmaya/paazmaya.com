@@ -1,10 +1,10 @@
-# https://circleci.com/docs/2.0/configuration-reference/
+# https://circleci.com/docs/configuration-reference/
 version: 2
 jobs:
   build:
     docker:
       # https://circleci.com/developer/images/image/cimg/node
-      - image: cimg/node:16.4
+      - image: cimg/node:20
 
     working_directory: ~/repo
 
@@ -13,15 +13,15 @@ jobs:
 
       - restore_cache:
           keys:
-            - v16-dependencies-{{ checksum "package.json" }}
+            - v20-dependencies-{{ checksum "package.json" }}
             # fallback to using the latest cache if no exact match is found
-            - v16-dependencies-
+            - v20-dependencies-
 
       - run: npm install
 
       - save_cache:
           paths:
             - node_modules
-          key: v16-dependencies-{{ checksum "package.json" }}
+          key: v20-dependencies-{{ checksum "package.json" }}
 
       - run: npm test
