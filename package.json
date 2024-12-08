@@ -21,6 +21,6 @@
   },
   "homepage": "https://github.com/paazmaya/paazmaya.com#readme",
   "dependencies": {
-    "selenium-webdriver": "^4.26.0"
+    "selenium-webdriver": "^4.27.0"
   }
 }
