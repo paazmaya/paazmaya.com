@@ -11,9 +11,13 @@ ID = "paazmaya-com"
   [headers.values]
     Accept-Ranges = "bytes"
     Cache-Control = "max-age=31536000, immutable"
+    Referrer-Policy = "strict-origin-when-cross-origin"
     Server = "Kashiyama Dojo Server"
     Strict-Transport-Security = "max-age=31536000; includeSubDomains; preload"
     Timing-Allow-Origin = "*"
+    X-Content-Type-Options = "nosniff"
+    X-Frame-Options = "SAMEORIGIN"
+    X-XSS-Protection = "1; mode=block"
 
 [[headers]]
   for = "/icons/*"
@@ -24,6 +28,7 @@ ID = "paazmaya-com"
   for = "/"
   [headers.values]
     Cache-Control = "max-age=179"
+    Content-Security-Policy = "default-src 'self'; img-src 'self' data:; style-src 'self' 'unsafe-inline'; script-src 'self'"
     X-Frame-Options = "SAMEORIGIN"
     X-XSS-Protection = "1; mode=block"
 

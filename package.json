@@ -14,12 +14,16 @@
     "type": "git",
     "url": "git+https://github.com/paazmaya/paazmaya.com.git"
   },
-  "author": "Juga Paazmaya",
+  "author": {
+    "name": "Juga Paazmaya",
+    "email": "paazmaya@yahoo.com",
+    "url": "https://paazmaya.fi"
+  },
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/paazmaya/paazmaya.com/issues"
   },
-  "homepage": "https://github.com/paazmaya/paazmaya.com#readme",
+  "homepage": "https://github.com/paazmaya/paazmaya.com",
   "dependencies": {
     "selenium-webdriver": "^4.41.0"
   }
